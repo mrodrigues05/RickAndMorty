@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadados da página -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Links para folha de estilos e ícone -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./images/logo-min.png" type="image/x-icon">
+
+    <!-- Título da página -->
+    <title>Rick and Morty</title>
+</head>
+
+<body>
+    <!-- Contêiner principal -->
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <!-- Logo -->
+            <img src="./images/logo-min.png" alt="rick and morty">
+
+            <!-- Lista de navegação -->
+            <ul>
+                <li>
+                    <a href="#">Personagens</a>
+                </li>
+                <li>
+                    <a href="#">Localizações</a>
+                </li>
+                <li>
+                    <a href="#">Episódios</a>
+                </li>
+            </ul>
+        </header>
+
+        <!-- Corpo principal -->
+        <main>
+            <!-- Seção de personagens -->
+            <section class="chars">
+                <!-- Logo (necessita de uma imagem) -->
+                <img src="./images/logo.png" alt="">
+
+                <!-- Filtros -->
+                <div class="filters">
+                    <!-- Campo de texto para filtrar por nome -->
+                    <input type="text" id="name" placeholder="Filter by name..." class="filter">
+
+                    <!-- Dropdown para filtrar por espécie -->
+                    <select name="species" id="species" class="filter">
+                        <option value="" default>
+                            Species
+                        </option>
+                        <option value="animal">Animal</option>
+                        <option value="alien">Alien</option>
+                        <option value="disease">Doença</option>
+                        <option value="unknown">Desconhecido</option>
+                        <option value="human">Humano</option>
+                        <option value="humanoid">Humanoide</option>
+                        <option value="mythological">Mitologico</option>
+                        <option value="poopybutthole">Poopybutthole</option>
+                        <option value="robot">Robo</option>
+                        <!-- Opções de espécie -->
+                        <!-- Exemplo: <option value="animal">Animal</option> -->
+                    </select>
+
+                    <!-- Dropdown para filtrar por gênero -->
+                    <select name="gender" id="gender" class="filter">
+                        <option value="">
+                            Genero
+                        </option>
+                        <option value="female">Feminino</option>
+                        <option value="male">Masculino</option>
+                        <option value="genderless">Sem Genero</option>
+                        <option value="unknown">Desconhecido</option>
+                        <!-- Opções de gênero -->
+                        <!-- Exemplo: <option value="female">Feminino</option> -->
+                    </select>
+
+                    <!-- Dropdown para filtrar por status -->
+                    <select name="status" id="status" class="filter">
+                        <option value="">
+                            Status
+                        </option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Morto</option>
+                        <option value="unknown">Desconhecido</option>
+                        <!-- Opções de status -->
+                        <!-- Exemplo: <option value="alive">Vivo</option> -->
+                    </select>
+                </div>
+
+                <!-- Contêiner para os personagens -->
+                <div class="chars-container">
+
+                </div>
+
+                <!-- Botão para carregar mais personagens -->
+                <button id="load-more">
+                    Carregar mais
+                </button>
+            </section>
+        </main>
+    </div>
+
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+
+</html>
